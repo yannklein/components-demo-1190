@@ -1,29 +1,26 @@
 .card-category {
+  height: 260px;
   color: white;
-  height: 300px;
-  box-shadow: 0 0 16px rgb(0 0 0 / 30%);
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  font-size: 24px;
 }
 
 .card-product {
   background-color: white;
   box-shadow: 0 0 16px rgb(0 0 0 / 30%);
-  border-radius: 4px;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
-.card-product img {
-  width: 120px;
+.card-product > img {
   height: 120px;
+  width: 120px;
   object-fit: cover;
-  margin-right: 16px;
-  border-radius: 4px 0 0 4px;
 }
 
 .card-product h2, .card-product p {
@@ -33,26 +30,27 @@
 .card-trip {
   background-color: white;
   box-shadow: 0 0 16px rgb(0 0 0 / 30%);
+  margin-bottom: 24px;
 }
 
 .card-trip > img {
-  height: 300px;
+  height: 260px;
   width: 100%;
+  object-fit: cover;
+  object-position: 50% 44%;
 }
 
-/* .card-trip img {
-  height: 300px;
-  width: 100%;
-} */
+.card-trip h2, .card-trip p {
+  margin: 0;
+}
 
 .card-trip-footer {
-  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 32px;
+  padding: 8px;
 }
 
-.card-trip-footer p, .card-trip-footer h2 {
-  margin: 0;
+.card-trip-price {
+  font-size: 24px;
 }
